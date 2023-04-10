@@ -1,0 +1,79 @@
+.head{
+    cursor: pointer;
+}
+.head .logo img{
+    width: 400px;
+    height: 150px;
+}
+.head .ad img{
+    width: 400px;
+    height: 150px; 
+}
+
+header{
+    background-color: #4b5320;
+    color: #fff;
+}
+header li{
+    margin-right: 30px;
+    transition: 0.5s;
+}
+header li a{
+    transition: 0.5s;
+    color: #fff;
+}
+header li a:hover{
+    color: crimson;
+    cursor: pointer;
+}
+.paddingSmall{
+    padding: 20px 0;
+}
+li,
+ul{
+    list-style-type: none;
+}
+
+.barIco{
+    font-size: 25px;
+    background: none;
+    color: #fff;
+    display: none;
+    border: none;
+}
+
+@media screen and (max-width:768px) {
+    .head .ad{
+        display: none;
+    }
+    .head .logo img{
+        width: 300px !important;
+        height: 80px;
+        
+    }
+    header .icon{
+        display: none;
+    }
+    header .flex{
+        display: none;
+
+    }
+    .barIco{
+        display: block;
+    }
+    header .navbar{
+        position: absolute;
+        display: block;
+        background-color: #fb4c35;
+        left: 0;
+        top: 240px !important;
+        width: 100%;
+        height: 55vh;
+        z-index: 5;
+        padding: 50px;
+        
+    }
+    header ul li{
+       margin-bottom: 30px; 
+    }
+}
